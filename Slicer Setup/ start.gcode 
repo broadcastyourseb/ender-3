@@ -1,8 +1,8 @@
-; Ender 3 Custom Start G-code with mesh bed leveling
+; Ender 3 Custom Start G-code
 G21 ;metric values
 M107 ;start with the fan off
 G28 ; Home all axes
-M420 S1 ; Retrieve mesh bed leveling, comment if not use
+M420 S1 ; Retrieve mesh bed leveling
 M117 Purge extruder
 G92 E0 ; Zero the extruded length
 G1 Z15.0 F3000 ; Move Z Axis up little to prevent scratching of Heat Bed
